@@ -1,0 +1,82 @@
+/* components/articleList.wxss */
+.article_list{
+    display: flex;
+    padding: 30rpx;
+    position: relative;
+    background: #fff;
+}
+
+.article_list + .article_list::before{
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    position: absolute;
+    background: var(--borderColor);
+    transform: scaleY(.5);
+}
+
+.article_list_left{
+    flex: 1;
+    overflow: hidden;
+    padding-top: 18rpx;
+}
+
+.article_list_right{ 
+    width: 260rpx;
+    height: 184rpx;
+    border-radius: 10rpx;
+    margin-left: 30rpx;
+    overflow: hidden;
+}
+.article_list_right image {
+    background-color: #e5e5e5;
+}
+
+.article_list_title{
+    font-size: 36rpx;
+    line-height: 50rpx;
+    font-weight: bold;
+    color: var(--textColor3);
+    height: 100rpx;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin-bottom: 21rpx;
+}
+
+.article_list_desc{
+    display: flex;
+    line-height: 1;
+    font-size: 28rpx;
+    color: var(--textColor9);
+}
+
+.artical_list_read{
+    margin-right: 20rpx;
+}
+
+.artical_list_good{
+    padding-left: 20rpx;
+    position: relative;
+}
+
+.artical_list_good::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 22rpx;
+    background: var(--borderColor);
+    left: 0;
+    top: 50%;
+    margin-top: -11rpx;
+    transform: scaleX(.5);
+}
+
+.article_list_right image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

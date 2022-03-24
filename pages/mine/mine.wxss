@@ -1,0 +1,267 @@
+/* pages/mine/mine.wxss */
+page{
+    height: 100%;
+    background: #F5F5F5;
+    /* padding-bottom: 50rpx; */
+}
+.mine-wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.noScorll{
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+}
+
+.header_content{
+  padding-top: 127rpx;
+}
+
+.header-title{
+  font-size: 34rpx;
+  font-weight: bold;
+  margin: auto;
+}
+.status-title{
+  padding-top: 20px;
+  height: 40px;
+  position: fixed;
+  left:0;
+  top:0;
+  width:100%;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#fff;
+  z-index: 100;
+  background: #20A746;
+  overflow: hidden;
+}
+.status_bg{
+  height:200rpx;
+  width:100%;
+  background: #20A746;
+  z-index: -1;
+  position: absolute;
+  left:0;
+  top:0;
+}
+.mine_content{
+    padding-bottom: 30rpx;
+    position: relative;
+    flex: 1;
+}
+.mine_bg{
+    width: 100%;
+    height:500rpx;
+    background: #20A746;
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: -1;
+}
+.mine_info{
+    display: flex;
+    padding: 20rpx 30rpx;
+    align-items: center;
+    margin-bottom: 30rpx;
+}
+
+.mine_info > image{
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+    border: 2rpx solid var(--white);
+    margin-right: 30rpx;
+    overflow: hidden;
+}
+
+.mine_name{
+    display: flex;
+    align-items: center;
+    line-height: 1;
+}
+.mine_name > text{
+    font-size: 44rpx;
+    color: var(--white);
+    font-weight: bold;
+    margin-right: 20rpx;
+}
+
+.mine_intergal{
+    font-size: 28rpx;
+    color: var(--white);
+    margin-top: 20rpx;
+    line-height: 1;
+}
+/* 功能列表 */
+.fun_list{
+    margin: 0 30rpx 20rpx;
+    border-radius: 15rpx;
+    background: var(--white);
+    padding: 40rpx;
+    box-sizing: border-box;
+}
+
+.fun_list_title{
+    line-height: 1;
+    font-size: 36rpx;
+    color: var(--textColor3);
+    font-weight: bold;
+    margin-bottom: 50rpx;
+}
+.fun_list_tab{
+    display: flex;
+    justify-content: space-between;
+}
+.remove_padding{
+    padding:0;
+}
+.fun_list_tab_content{
+    font-size: 28rpx;
+    color: var(--textColor6);
+    line-height: 1;
+}
+.fun_list_tab_content image{
+    width: 100%;
+    height: 60rpx;
+}
+.fun_list_tab_content text{
+    display: block;
+}
+
+.fun_list_tab_content .imgBox{
+    width: 60rpx;
+    margin: 0 auto 20rpx;
+    position: relative;
+}
+
+
+.msg_num{
+    position: absolute;
+    top: -8rpx;
+    right: -9rpx;
+    width: 32rpx;
+    height: 28rpx;
+    border: 2rpx solid var(--white);
+    background: var(--markColor);
+    border-radius: 12rpx;
+    line-height: 26rpx;
+    text-align: center;
+    color: var(--white);
+    font-size: 20rpx;
+    font-weight: 500; 
+}
+/* 底部列表 */
+.other_list{
+    padding: 0;
+}
+.other_list_content{
+    height: 110rpx;
+    display: flex;
+    padding: 0 30rpx 0 40rpx;
+    align-items: center;
+    position: relative;
+}
+
+.other_list_content + .other_list_content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--borderColor);
+    transform: scaleY(.5);
+}
+
+.other_list_content > view{
+    font-size: 36rpx;
+    color: var(--textColor3);
+    font-weight: bold;
+    flex: 1;
+    overflow: hidden;
+}
+
+.exit_login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110rpx;
+    margin: 0 30rpx;
+    background: var(--white);
+    border-radius: 15rpx;
+    margin-top: 20rpx;
+    font-size: 36rpx;
+    color: var(--subColor);
+    font-weight: bold;
+}
+
+
+/* 未登录 */
+.mine_login{
+    position: absolute;
+    left:0;
+    top:0;
+    bottom: 0;
+    right:0;
+    z-index: 10;
+    border:none;
+    background:none;
+}
+.mine_login:after{
+    content: none;
+}
+
+
+.bottom_title{
+    width:100%;
+    height:120rpx;
+    line-height:120rpx;
+    text-align: center;
+    font-size:36rpx;
+    font-weight: 600;
+    color:#333;
+}
+.phone_login{
+    width:540rpx;
+    height:90rpx;
+    margin:40rpx auto;
+    border-radius: 45rpx;
+    background: #29C153;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36rpx;
+    color:#fff;
+}
+
+.phone_login>image{
+    width:34rpx;
+    height:44rpx;
+    margin-right:20rpx;
+}
+.phone_login::after{
+    display: none;
+}
+
+/* 关怀模式 */
+
+.mine_careContent {
+    /* background-color: #20A746; */
+    padding: 32rpx;
+    box-sizing: border-box;
+}
+.care_wrap {
+    margin-bottom: 32rpx;
+}
+.mine_info.careMod {
+    background-color: #20A746;
+    margin: 0;
+
+}

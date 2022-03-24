@@ -1,0 +1,20 @@
+/* components/picker/picker.wxss */
+.alert_title{
+    font-size:36rpx;
+    color:#333;
+    padding:40rpx 0;
+    font-weight: bold;
+    text-align: center;
+}
+.alert_btn{
+    display: flex;
+    padding-top:0rpx;
+    justify-content: center;
+}
+.alert_btn button{
+    width:540rpx;
+    height:90rpx;
+}
+.picker_area .van-picker{
+    display: none !important;
+}

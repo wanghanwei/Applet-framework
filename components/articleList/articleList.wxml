@@ -1,0 +1,13 @@
+<!-- components/articleList.wxml -->
+<view class="article_list" wx:for="{{list}}" wx:key="index" bind:tap="toActDetail" data-id="{{item.id}}">
+    <view class="article_list_left">
+        <view class="article_list_title">{{item.articleTitle}}</view>
+        <view class="article_list_desc">
+            <view class="artical_list_read">{{item.pageview ? item.pageview : 0}}阅读</view>
+            <view class="artical_list_good">{{item.likeNum ? item.likeNum : 0}}赞</view>
+        </view>
+    </view>
+    <view class="article_list_right">
+        <image src="{{item.newsTagRunnerUrl}}" />
+    </view>
+</view>

@@ -1,0 +1,11 @@
+<!-- components/dialog/dialog.wxml -->
+<van-popup show="{{ show }}" bind:close="cancel" class="dialog_popup">
+    <view class="dialog">
+        <view class="dialog_title">{{title}}</view>
+        <view class="dialog_content">{{content}}</view>
+        <view class="dialog_foot">
+            <view class="dialog_cancel" bind:tap="cancel" wx:if="{{cancelTxt}}">{{cancelTxt}}</view>
+            <view class="dialog_confirm" bind:tap="saveData">{{comfirmTxt}}</view>
+        </view>
+    </view>
+</van-popup>

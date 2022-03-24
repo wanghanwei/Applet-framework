@@ -1,0 +1,8 @@
+<!--components/dialog/dialog.wxml-->
+<view class="nothing_div custom-class" wx:if="{{show}}">
+    <image class="" src="/images/public/noData.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+    <text>{{toast}}</text>
+</view>
+  
+
+  

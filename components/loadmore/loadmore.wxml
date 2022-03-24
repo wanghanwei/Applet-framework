@@ -1,0 +1,6 @@
+<!--components/loadmore/loadmore.wxml-->
+<view class="loadMore">
+    <van-loading size="24px" color="#999" wx:if="{{loadtext === '加载中'}}">加载中...</van-loading>
+    <view class="load-more" wx:else>{{loadtext}}</view>
+</view>
+

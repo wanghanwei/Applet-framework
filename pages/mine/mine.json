@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "u-dialog": "/components/dialog/dialog"
+  },
+  "navigationBarBackgroundColor":"#20A746",
+  "navigationBarTitleText":"我的",
+  "navigationBarTextStyle":"white",
+  "navigationStyle":"custom"
+}

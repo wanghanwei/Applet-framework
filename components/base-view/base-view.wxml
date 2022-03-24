@@ -1,0 +1,17 @@
+<movable-area class="base-view">
+    <view class="base-wapper" catchtap="handleClose" style="overflow: {{ hiddens ? 'hidden' : 'scroll' }};">
+        <slot></slot>
+    </view>
+    <movable-view wx:if="{{ showPhoneIcon }}" x="{{x}}" y="{{y}}" class="{{show ? 'movable-view animate' : 'movable-view'}}" direction="all"
+        damping="{{40}}" bindtouchend="handleTouchEnd" friction="{{1}}" bindtouchmove="handleTouchMove" bindtouchstart="handleTouchStart">
+        <image hidden="{{show}}" class="icon_service" src="../../images/tabbar/vol.png" mode="aspectFill" />
+    </movable-view>
+    <!-- <cover-view hidden="{{!show}}" class="cover-modal" bindanimationend='animationEnd'>
+        <cover-view class="cover-wapper {{animateEnd ? 'show' : ''}}">
+            <cover-view class="cover-button" catchtap="handleClose">
+                <cover-image class="cover-image" src="../../img/icon/icon_home_white.png"> </cover-image>
+                <cover-view class="label">回到主屏幕</cover-view>
+            </cover-view>
+        </cover-view>
+    </cover-view> -->
+</movable-area>

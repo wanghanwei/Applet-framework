@@ -1,0 +1,95 @@
+/**app.wxss**/
+
+page{
+    --themeColor: #27C253;
+    --markColor: #FF3534;
+    --subColor: #FFA408;
+    --borderColor: #EAEAEA;
+    --bgColor: #F5F5F5;
+    --textColor3: #333;
+    --textColor6: #666;
+    --textColor9: #999;
+    --textColorB: #BBB;
+    --textColorC: #ccc;
+    --white: #fff;
+    --black: #000;
+    --field-label-color: #333333;
+    --tab-text-color: #999999;
+    font-family: 'PingFang SC', 'Microsoft Yahei';
+    font-size: 28rpx;
+}
+
+page::after{
+    content: "";
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1rpx;
+    background-color: #efefef;
+    z-index: 9999;
+  }
+
+.line{
+    width:100%;
+    height:20rpx;
+    background:var(--bgColor);
+}
+
+.index_right{
+    flex:0 0 24rpx;
+    width: 24rpx;
+    height:24rpx;
+}
+.fa{
+    position: relative;
+}
+.van-icon--image{
+    line-height:normal !important;
+}
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+    display: none;
+}
+.btn-customer-service{
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    bottom: 0;
+    border:none;
+    /* width: 140rpx; */
+    width: 140rpx;
+    height: 134rpx;
+    background: none;
+    padding:0;
+}
+.btn-customer-service::after{
+    display: none;
+}
+
+.btn-customer-service image{
+    width: 140rpx;
+    height: 134rpx;
+}
+.fix-Full-button{
+    bottom: 68rpx !important;
+}
+.fix-Full-button::after{
+    content: '';
+    position: fixed;
+    bottom: 0!important;
+    height: 68rpx!important;
+    width: 100%;
+    background: #fff;
+}
+.care_switch {
+    padding: 28rpx;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #188538;
+    border-radius: 16rpx;
+    font-size: 28rpx;
+    color: #fff;
+}

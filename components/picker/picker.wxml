@@ -1,0 +1,30 @@
+<!-- 选择器 -->
+<van-popup show="{{ show }}" round closeable custom-style="height: 780rpx" position="bottom" bind:close="showPicker">
+    <view class="alert_title">{{title}}</view>
+    <block wx:if="{{type == 'area'}}">
+        <!-- <van-area area-list="{{ areaList.default }}" columns-placeholder="{{ ['请选择', '请选择', '请选择'] }}" bind:change="changeArea" /> -->
+        <van-button type="primary" class="alert_btn" round custom-style="font-size:36rpx;font-weight:bold;" bind:tap="saveAreaData">
+            确定
+        </van-button>
+    </block>
+    <block wx:elif="{{type == 'minDate'}}">
+        <!-- <van-datetime-picker type="date" value="{{ currentDate }}" bind:input="onInput" max-date="{{ maxDate }}" /> -->
+        <van-datetime-picker type="date" value="{{ currentVal }}" bind:change="onInput" max-date="{{endDate}}" />
+        <van-button type="primary" class="alert_btn" round custom-style="font-size:36rpx;font-weight:bold;" bind:tap="saveDate">
+            确定
+        </van-button>
+    </block>
+    <block wx:elif="{{type == 'maxDate'}}">
+        <!-- <van-datetime-picker type="date" value="{{ currentDate }}" bind:input="onInput" max-date="{{ maxDate }}" /> -->
+        <van-datetime-picker type="date" value="{{ currentVal }}" bind:change="onInput" max-date="{{ maxDate }}" min-date="{{ minDate }}" />
+        <van-button type="primary" class="alert_btn" round custom-style="font-size:36rpx;font-weight:bold;" bind:tap="saveDate">
+            确定
+        </van-button>
+    </block>
+    <block wx:else>
+        <van-picker columns="{{ list }}" bind:change="changePicker" />
+        <van-button type="primary" class="alert_btn" round custom-style="font-size:36rpx;font-weight:bold;" bind:tap="saveData">
+            确定
+        </van-button>
+    </block>
+</van-popup>

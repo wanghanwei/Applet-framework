@@ -1,0 +1,12 @@
+<!-- pages/mine/mine.wxml -->
+<base-view showPhoneIcon="{{careMod}}">
+    <view class="mine-wrap">
+        <view class="header_content">
+            <view class="status_bg"></view>
+            <view class="status-title" style="padding-top:{{statusHeight+'px'}};height:{{navHeight + 'px'}}">
+                <view class="header-title">我的</view>
+            </view>
+        </view>
+    </view>
+
+</base-view>

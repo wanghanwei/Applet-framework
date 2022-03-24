@@ -1,0 +1,19 @@
+.nothing_div{
+    width:430rpx;
+    height:420rpx;
+    position: fixed;
+    text-align: center;
+    left: 50%;
+    top:200rpx;
+    transform: translateX(-50%);
+}
+.nothing_div image{
+    width:430rpx;
+    height:325rpx;
+    margin-bottom: 40rpx;
+}
+.nothing_div text{
+    font-size:28rpx;
+    color:#999;
+}
+

@@ -1,0 +1,5 @@
+node_modules
+.vscode
+.svn
+.git
+project.config.json

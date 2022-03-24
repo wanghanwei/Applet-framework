@@ -1,0 +1,13 @@
+/* components/loadmore/loadmore.wxss */
+.loadMore{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28rpx;
+    padding: 40rpx 0;
+}
+.load-more{
+	text-align: center;
+	color: #999;
+}
