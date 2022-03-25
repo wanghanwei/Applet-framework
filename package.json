@@ -22,10 +22,6 @@
     "precommit": "lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@techdoc.oa.com:ZHAMTeam/anmeng-wechat-miniprogram.git"
-  },
   "lint-staged": {
     "**/*.js": [
       "eslint -c .eslintrc . --fix",
