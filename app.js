@@ -1,36 +1,3 @@
-// // app.js
-// import beidou from "./utils/beidou/beidou.es";
-// beidou.setPara({
-//   // server_url: "https://stat.insclouds.com/bi/collect",
-//   // app: {
-//   //   app_id: "918d05505b4a40cba6d7cfc5052da943",
-//   //   app_version: "1.0.0",
-//   // },
-//   // // 全埋点控制开关
-//   // autoTrack: {
-//   //   mpClick: false,
-//   // },
-//   // // 自定义渠道追踪参数，如source_channel: ["custom_param"]
-//   // source_channel: [],
-//   // // 是否允许控制台打印查看埋点数据(建议开启查看)
-//   // show_log: true,
-//   // // 是否允许修改 onShareAppMessage 里 return 的 path，用来增加(登录 ID，分享层级，当前的 path)，在 app onShow 中自动获取这些参数来查看具体分享来源、层级等
-//   // allow_amend_share_path: true,
-//   // preset_properties: {
-//   //   location: {
-//   //     type: "wgs84",
-//   //   },
-//   // },
-// });
-// let openId = wx.getStorageSync("userInfo");
-// if (openId) {
-//   beidou.registerApp({
-//     openId: openId.openid,
-//   });
-//   beidou.login(openId.openid);
-// }
-// beidou.init();
-
 // 工具库
 const http = require("./utils/request");
 // 常量定义
